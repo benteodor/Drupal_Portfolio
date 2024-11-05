@@ -1,0 +1,33 @@
+<form {{ attributes }} data-aos="fade-up" data-aos-delay="200">
+    <div class="php-email-form">
+        <div class="row">
+            <div class="col-md-6">
+                {{ element.elements.name }}
+            </div>
+    
+            <div class="col-md-6">
+                {{ element.elements.email }}
+            </div>
+    
+            <div class="col-md-12">
+                <label for="subject-field" class="pb-2">Subject</label>
+                {{ element.elements.subject }}
+            </div>
+    
+            <div class="col-md-12">
+                {{ element.elements.message }}
+            </div>
+    
+            <div class="col-md-12 text-center">
+                {#<div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>#}
+                {{ element.elements.actions }}
+            </div>
+    
+            {{ element.form_build_id }}
+            {{ element.form_token }}
+            {{ element.form_id }}
+        </div>
+        </div>
+</form>
